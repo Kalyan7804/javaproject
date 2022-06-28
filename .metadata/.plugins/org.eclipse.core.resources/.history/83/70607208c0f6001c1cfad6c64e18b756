@@ -1,0 +1,23 @@
+package com.jsp.prac.util;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+
+public class ConnectionManagerImpl implements ConnectionManager{
+
+	public Connection getConnection() {
+		Connection connection=null;
+		try {
+			Class.forName("com.mysql.cj.jdbc.Driver");
+			connection=DriverManager.getConnection("jdbc:mysql://localhost:3306/jdbcprac",
+					"root",
+					"root");
+		} catch (ClassNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		return connection;
+	}
+
+}

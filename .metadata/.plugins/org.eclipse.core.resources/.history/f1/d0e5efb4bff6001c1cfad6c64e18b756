@@ -1,0 +1,5 @@
+package com.jsp.prac.util;
+
+public interface ConnectionManager {
+
+}

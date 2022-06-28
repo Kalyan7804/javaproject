@@ -1,0 +1,9 @@
+0:0:0:0:0:0:0:1 - - [16/Jun/2022:00:07:52 +0530] "GET /webproject/home.html HTTP/1.1" 200 475
+0:0:0:0:0:0:0:1 - - [16/Jun/2022:00:07:52 +0530] "GET /favicon.ico HTTP/1.1" 404 759
+0:0:0:0:0:0:0:1 - - [16/Jun/2022:00:17:28 +0530] "GET /webproject/home.html HTTP/1.1" 304 -
+127.0.0.1 - - [16/Jun/2022:00:20:55 +0530] "GET / HTTP/1.1" 404 748
+0:0:0:0:0:0:0:1 - - [16/Jun/2022:00:24:24 +0530] "GET /webproject/home.html HTTP/1.1" 200 405
+0:0:0:0:0:0:0:1 - - [16/Jun/2022:00:24:25 +0530] "GET /webproject/ControllerServlet?task=register HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [16/Jun/2022:00:24:25 +0530] "GET /webproject/registeruser.html HTTP/1.1" 200 509
+0:0:0:0:0:0:0:1 - - [16/Jun/2022:16:41:57 +0530] "GET / HTTP/1.1" 404 748
+0:0:0:0:0:0:0:1 - - [16/Jun/2022:16:41:57 +0530] "GET /favicon.ico HTTP/1.1" 404 759
