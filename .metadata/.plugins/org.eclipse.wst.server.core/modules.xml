@@ -2,5 +2,6 @@
 <modules>
   <module moduleId="org.eclipse.jst.j2ee.server:EMS1" serverId="Tomcat v7.0 Server at localhost"/>
   <module moduleId="org.eclipse.jst.jee.server:prac02" serverId="Tomcat v7.0 Server at localhost"/>
+  <module moduleId="org.eclipse.jst.j2ee.server:FlyAway" serverId="Tomcat v7.0 Server at localhost"/>
   <module moduleId="org.eclipse.jst.jee.server:webproject" serverId="Tomcat v7.0 Server at localhost"/>
 </modules>

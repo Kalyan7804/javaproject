@@ -7,3 +7,11 @@
 0:0:0:0:0:0:0:1 - - [28/Jun/2022:14:01:11 +0530] "GET /EMS1/index.jsp HTTP/1.1" 200 261
 0:0:0:0:0:0:0:1 - - [28/Jun/2022:14:01:21 +0530] "POST /EMS1/LoginServlet HTTP/1.1" 404 765
 0:0:0:0:0:0:0:1 - - [28/Jun/2022:14:26:53 +0530] "GET /EMS1/WEB-INF/classes/com/jsp/prac/util/ConnectionManagerImpl.java HTTP/1.1" 404 683
+127.0.0.1 - - [28/Jun/2022:23:39:28 +0530] "GET / HTTP/1.1" 404 748
+0:0:0:0:0:0:0:1 - - [28/Jun/2022:23:39:29 +0530] "GET /FlyAway/index.jsp HTTP/1.1" 200 185
+0:0:0:0:0:0:0:1 - - [28/Jun/2022:23:39:29 +0530] "GET /favicon.ico HTTP/1.1" 404 759
+0:0:0:0:0:0:0:1 - - [28/Jun/2022:23:39:32 +0530] "GET /FlyAway/login.jsp HTTP/1.1" 200 162
+127.0.0.1 - - [28/Jun/2022:23:45:46 +0530] "GET / HTTP/1.1" 404 748
+0:0:0:0:0:0:0:1 - - [28/Jun/2022:23:45:46 +0530] "GET /FlyAway/index.jsp HTTP/1.1" 200 185
+0:0:0:0:0:0:0:1 - - [28/Jun/2022:23:45:52 +0530] "GET /FlyAway/login.jsp HTTP/1.1" 200 371
+0:0:0:0:0:0:0:1 - - [28/Jun/2022:23:45:59 +0530] "POST /FlyAway/ControllerServlet HTTP/1.1" 200 20

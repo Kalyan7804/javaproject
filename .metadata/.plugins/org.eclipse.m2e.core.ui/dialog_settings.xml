@@ -2,6 +2,7 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="D:\FSD\EMS1\src\main\java\com\jsp\prac\dto"/>
 			<item value="D:\FSD\prac02\src\main\java"/>
 			<item value="D:\FSD\prac02\src\main\webapp\input.jsp"/>
 		</list>
@@ -27,10 +28,13 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
+			<item value="com.phase2.project.FlyAway"/>
 		</list>
 		<list key="groupId">
+			<item value="com.phase2.project"/>
 		</list>
 		<list key="artifactId">
+			<item value="FlyAway"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
