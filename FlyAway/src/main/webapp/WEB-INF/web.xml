@@ -16,6 +16,18 @@
   	<description></description>
   	<servlet-class>com.phase2.project.Controllers.SignupServlet</servlet-class>
   </servlet>
+  <servlet>
+  	<servlet-name>ChangePasswordServlet</servlet-name>
+  	<display-name>ChangePasswordServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.phase2.project.Controllers.ChangePasswordServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>ValidateUserServlet</servlet-name>
+  	<display-name>ValidateUserServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.phase2.project.Controllers.ValidateUserServlet</servlet-class>
+  </servlet>
   <servlet-mapping>
   	<servlet-name>ControllerServlet</servlet-name>
   	<url-pattern>/ControllerServlet</url-pattern>
@@ -23,5 +35,13 @@
   <servlet-mapping>
   	<servlet-name>SignupServlet</servlet-name>
   	<url-pattern>/SignupServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>ChangePasswordServlet</servlet-name>
+  	<url-pattern>/ChangePasswordServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>ValidateUserServlet</servlet-name>
+  	<url-pattern>/ValidateUserServlet</url-pattern>
   </servlet-mapping>
 </web-app>

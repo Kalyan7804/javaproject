@@ -8,14 +8,16 @@
 </head>
 <body>
 
-<hi>Welcome to login page</hi>
+<h1>Welcome to login page</h1>
 
-<form action="ControllerServlet" method="post">
+<form action="ValidateUserServlet" method="post">
 		Username: <input type="text" name="uname"/><br/>
 		Password: <input type="password" name="pword"/><br/>
 		<input type="submit" value="Login"/>
 		<br/>
 		<a href="signup.jsp">Add User</a><br/>
+		<a href="changepassword.jsp">Change Password</a><br/>
+		
 	</form>
 
 
