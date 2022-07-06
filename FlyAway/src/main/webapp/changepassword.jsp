@@ -8,7 +8,8 @@
 </head>
 <body>
 	<form action="ChangePasswordServlet" method="post">
-		New Password: <input type="text" name="uname"/><br/>
+		Username:<input type="text" name="uname"/><br/>
+		New Password: <input type="text" name="password"/><br/>
 		
 		<input type="submit" value="submit"/><br/>
 		

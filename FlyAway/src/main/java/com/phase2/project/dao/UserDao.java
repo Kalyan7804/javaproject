@@ -14,6 +14,27 @@ public class UserDao {
 	public UserDao() {
 		m1= new SessionFactoryManagerImpl();
 	}
+	
+	public void addUser(User user) {
+		Transaction transaction=null;
+		Session session=m1.getSessionFactory().openSession();
+		transaction =session.beginTransaction();
+		session.save(user);
+		transaction.commit();
+		
+	}
+	
+	public void changePwd(String uname,String password) {
+		Transaction transaction=null;
+		Session session=m1.getSessionFactory().openSession();
+		transaction=session.beginTransaction();
+		Query query=session.createQuery("update user set user_password=:password where user_name=:uname");
+		query.setParameter("password", password);
+		query.setParameter("uname", uname);
+		query.executeUpdate();
+		transaction.commit();
+	}
+	
 	public User getUser(String uname, String pword) {
 		Transaction transaction=null;
 		User user=null;

@@ -11,7 +11,8 @@
 		First Name : <input type="text" name="firstName"/><br/>
 		Last Name  : <input type="text" name="lastName"/><br/>
 		Email		:<input type="email" name="email"/><br/>
-		Date(must be greater than 18 years): <input type="date" name="dob"/><br/>	
+		Phone Number  : <input type="number" name="phno"/><br/>	
+		
 		User Name  : <input type="text" name="uname"/><br/>
 		Password   : <input type="password" name="pword"/><br/>
 		<button type="submit">Proceed</button>
