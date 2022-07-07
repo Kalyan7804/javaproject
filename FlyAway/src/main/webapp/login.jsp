@@ -11,12 +11,16 @@
 <h1>Welcome to login page</h1>
 
 <form action="ValidateUserServlet" method="post">
+		User Login
 		Username: <input type="text" name="uname"/><br/>
 		Password: <input type="password" name="pword"/><br/>
 		<input type="submit" value="Login"/>
 		<br/>
 		<a href="signup.jsp">Add User</a><br/>
 		<a href="changepassword.jsp">Change Password</a><br/>
+		Admin Login
+		<a href="adminlogin.jsp">click here for admin</a>
+		
 		
 	</form>
 

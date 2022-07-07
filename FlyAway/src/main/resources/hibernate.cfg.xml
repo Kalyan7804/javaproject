@@ -26,8 +26,9 @@
 			is already in existance it will use it to store data, if not new table will 
 			be created -->
 			
-		<mapping class="com.phase2.project.dto.Flight"/>
+		<mapping class="com.phase2.project.dto.Flights"/>
 		<mapping class="com.phase2.project.dto.User"/>
+		
 		
 	
 	</session-factory>

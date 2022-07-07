@@ -34,6 +34,13 @@
   	<description></description>
   	<servlet-class>com.phase2.project.Controllers.FlightSearchServlet</servlet-class>
   </servlet>
+  <servlet>
+  	<servlet-name>PaymentServlet</servlet-name>
+  	<display-name>PaymentServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.phase2.project.Controllers.PaymentServlet</servlet-class>
+  </servlet>
+  
   <servlet-mapping>
   	<servlet-name>ControllerServlet</servlet-name>
   	<url-pattern>/ControllerServlet</url-pattern>
@@ -54,4 +61,9 @@
   	<servlet-name>FlightSearchServlet</servlet-name>
   	<url-pattern>/FlightSearchServlet</url-pattern>
   </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>PaymentServlet</servlet-name>
+  	<url-pattern>/PaymentServlet</url-pattern>
+  </servlet-mapping>
+  
 </web-app>

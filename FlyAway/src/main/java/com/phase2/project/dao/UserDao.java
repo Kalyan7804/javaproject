@@ -40,7 +40,7 @@ public class UserDao {
 		User user=null;
 		Session session=m1.getSessionFactory().openSession();
 		transaction =session.beginTransaction();
-		Query query=session.createQuery("from user where user_name=:uname and user_password=:pword");
+		Query query=session.createQuery("from User where user_name=:uname and user_password=:pword");
 		query.setParameter("uname", uname);
 		query.setParameter("pword", pword);
 		user=(User)query.uniqueResult();

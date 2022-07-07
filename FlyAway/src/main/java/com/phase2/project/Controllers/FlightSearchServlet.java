@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.phase2.project.dao.FlightDao;
-import com.phase2.project.dto.Flight;
+import com.phase2.project.dto.Flights;
 
 
 public class FlightSearchServlet extends HttpServlet {
@@ -33,11 +33,10 @@ public class FlightSearchServlet extends HttpServlet {
 		String dtsn=request.getParameter("destination");
 		String dat=request.getParameter("date");
 		String paxno=request.getParameter("pax");
-		ArrayList<Flight> flights = null;
+		ArrayList<Flights> flights = null;
 		
 		
-		flights=flightdao.getFlights(orgn,dtsn , dat);
-		
+		flights=flightdao.getFlights(orgn,dtsn,dat);
 		
 		
 		request.setAttribute("flights", flights);
@@ -45,6 +44,13 @@ public class FlightSearchServlet extends HttpServlet {
 		request.setAttribute("destination", dtsn);
 		request.setAttribute("paxno", paxno);
 		
+		
+		System.out.println(flights);
+		//request.setAttribute("airline", airline);
+		System.out.println(orgn);
+		System.out.println(dtsn);
+		System.out.println(paxno);
+		System.out.println(dat);
 		
 		RequestDispatcher dispatcher = request.getRequestDispatcher("./availableFlights.jsp");
 		dispatcher.forward(request, response);
