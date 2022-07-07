@@ -28,6 +28,12 @@
   	<description></description>
   	<servlet-class>com.phase2.project.Controllers.ValidateUserServlet</servlet-class>
   </servlet>
+  <servlet>
+  	<servlet-name>FlightSearchServlet</servlet-name>
+  	<display-name>FlightSearchServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.phase2.project.Controllers.FlightSearchServlet</servlet-class>
+  </servlet>
   <servlet-mapping>
   	<servlet-name>ControllerServlet</servlet-name>
   	<url-pattern>/ControllerServlet</url-pattern>
@@ -43,5 +49,9 @@
   <servlet-mapping>
   	<servlet-name>ValidateUserServlet</servlet-name>
   	<url-pattern>/ValidateUserServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>FlightSearchServlet</servlet-name>
+  	<url-pattern>/FlightSearchServlet</url-pattern>
   </servlet-mapping>
 </web-app>
