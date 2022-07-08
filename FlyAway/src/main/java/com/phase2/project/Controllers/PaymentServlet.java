@@ -27,17 +27,40 @@ public class PaymentServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		PrintWriter writer=response.getWriter();
 		
-		String flightid=request.getParameter("selected");
-	
-		int flightidi=Integer.parseInt(flightid);
-		writer.println(flightidi);
-		//request.setAttribute("flightid",flightid);
-		Flights flight=flightDao.getFlightById(flightidi);
-		writer.println(flight.getId());
-		writer.println(flight.getOrigin());
+		String data=request.getParameter("selected");
+		//writer.print(data);
+		int flightidi=Integer.parseInt(data);
+		int paxno=flightidi%10;
+		String paxnos=String.valueOf(paxno);
+		int flightid=flightidi/10;
+		//writer.println(paxno);
+		//writer.println(flightid);
 		
-		//RequestDispatcher dispatcher = request.getRequestDispatcher("./paymentpage.jsp");
-		//dispatcher.forward(request, response);
+//		writer.println(flightidi);
+		Flights flight=flightDao.getFlightById(flightid);
+//		writer.println(flight.getId());
+//		writer.println(flight.getOrigin());
+		
+		String origin=flight.getOrigin();
+		String destination=flight.getDestination();
+		String date=flight.getDate();
+		String time=flight.getTime();
+		Double topay=flight.getPrice()*paxno;
+		String topays=String.valueOf(topay);
+		String airline=flight.getAirline();
+		
+	//	request.setAttribute("flightid",flightid);
+		request.setAttribute("origin",origin);
+		request.setAttribute("destination",destination);
+		request.setAttribute("airline", airline);
+		request.setAttribute("paxnos",paxnos);
+		request.setAttribute("date",date);
+		request.setAttribute("time",time);
+		request.setAttribute("topays",topays);
+		
+		
+		RequestDispatcher dispatcher = request.getRequestDispatcher("./paymentpage.jsp");
+		dispatcher.forward(request, response);
 	}
 
 	

@@ -49,7 +49,7 @@
     					out.print("<td>" + (f.getPrice()*paxno) + "</td>");
     					out.print("<td>" + paxno + "</td>");
     					//session.setAttribute("flag", f.getId());
-    					out.print("<td><input type='radio' name='selected' value='"+f.getId()+"' required/></td></tr>");
+    					out.print("<td><input type='radio' name='selected' value='"+f.getId()+paxno+"' required/></td></tr>");
     				}
     			%>
     		</tbody>

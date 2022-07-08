@@ -28,6 +28,7 @@
 			
 		<mapping class="com.phase2.project.dto.Flights"/>
 		<mapping class="com.phase2.project.dto.User"/>
+		<mapping class="com.phase2.project.dto.Admin"/>
 		
 		
 	

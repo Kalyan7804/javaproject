@@ -40,6 +40,12 @@
   	<description></description>
   	<servlet-class>com.phase2.project.Controllers.PaymentServlet</servlet-class>
   </servlet>
+  <servlet>
+  	<servlet-name>AdminloginServlet</servlet-name>
+  	<display-name>AdminloginServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.phase2.project.Controllers.AdminloginServlet</servlet-class>
+  </servlet>
   
   <servlet-mapping>
   	<servlet-name>ControllerServlet</servlet-name>
@@ -64,6 +70,10 @@
   <servlet-mapping>
   	<servlet-name>PaymentServlet</servlet-name>
   	<url-pattern>/PaymentServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>AdminloginServlet</servlet-name>
+  	<url-pattern>/AdminloginServlet</url-pattern>
   </servlet-mapping>
   
 </web-app>

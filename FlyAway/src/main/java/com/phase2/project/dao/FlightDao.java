@@ -50,4 +50,18 @@ public class FlightDao {
 		
 		return flight;
 	}
+	
+	public ArrayList<Flights> getAllFlights(){
+		Transaction transaction=null;
+		ArrayList<Flights> flights=null;
+		Session session=m2.getSessionFactory().openSession();
+		transaction =session.beginTransaction();
+		Query query=session.createQuery("from Flights");
+		flights=(ArrayList<Flights>) query.getResultList();
+		transaction.commit();
+		
+		System.out.println(flights);
+		
+		return flights;
+	}
 }

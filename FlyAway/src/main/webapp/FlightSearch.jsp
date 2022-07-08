@@ -28,7 +28,7 @@
                             </tr>
                             <tr>
                                 <td><label for="pax">Number of travelers:</label></td>
-                                <td><input type="number" id="pax" name="pax"  min="1" max="10"></td>
+                                <td><input type="number" id="pax" name="pax"  min="1" max="9"></td>
                             </tr>
                             <tr>
                                 <td><button type="submit">Search</button></td>
