@@ -43,6 +43,7 @@ public class AdminloginServlet extends HttpServlet {
 		
 		ArrayList<Flights> allflights = null;
 		allflights=flightDao.getAllFlights();
+		
 		request.setAttribute("allflights", allflights);
 		
 		if(admin!=null) {

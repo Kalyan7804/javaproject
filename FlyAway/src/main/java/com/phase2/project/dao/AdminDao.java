@@ -28,5 +28,17 @@ public class AdminDao {
 		return admin;
 		
 	}
+	
+	
+	public void achangePwd(String auname,String apassword) {
+		Transaction transaction=null;
+		Session session=ma.getSessionFactory().openSession();
+		transaction=session.beginTransaction();
+		Query query=session.createQuery("update Admin set admin_password=:apassword where admin_username=:auname");
+		query.setParameter("apassword", apassword);
+		query.setParameter("auname", auname);
+		query.executeUpdate();
+		transaction.commit();
+	}
 		
 }

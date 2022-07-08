@@ -5,6 +5,27 @@
 <%@ page import="com.phase2.project.dto.*" %>
 <!DOCTYPE html>
 <html>
+<style>
+table, th, td {
+  border: 1px solid;
+}
+td {
+  text-align: center;
+}
+
+th, td {
+  padding: 15px;
+  text-align: left;
+}
+
+tr:hover {background-color: coral;}
+
+th {
+  background-color: #1abc9c;
+  color: white;
+}
+
+</style>
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>

@@ -46,6 +46,12 @@
   	<description></description>
   	<servlet-class>com.phase2.project.Controllers.AdminloginServlet</servlet-class>
   </servlet>
+  <servlet>
+  	<servlet-name>ChangePasswordAdminServlet</servlet-name>
+  	<display-name>ChangePasswordAdminServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.phase2.project.Controllers.ChangePasswordAdminServlet</servlet-class>
+  </servlet>
   
   <servlet-mapping>
   	<servlet-name>ControllerServlet</servlet-name>
@@ -74,6 +80,10 @@
   <servlet-mapping>
   	<servlet-name>AdminloginServlet</servlet-name>
   	<url-pattern>/AdminloginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>ChangePasswordAdminServlet</servlet-name>
+  	<url-pattern>/ChangePasswordAdminServlet</url-pattern>
   </servlet-mapping>
   
 </web-app>

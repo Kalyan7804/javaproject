@@ -2,8 +2,43 @@
     pageEncoding="UTF-8"%>
 <%@ page import="java.util.*" %>    
 <%@ page import="com.phase2.project.dto.*" %>
+<%@ include file="header.jsp" %>
 <!DOCTYPE html>
 <html>
+<style>
+table, th, td {
+  border: 1px solid;
+}
+td {
+  text-align: center;
+}
+
+th, td {
+  padding: 15px;
+  text-align: left;
+}
+
+tr:hover {background-color: coral;}
+
+th {
+  background-color: #1abc9c;
+  color: white;
+}
+
+.button {
+  background-color: #1abc9c;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+</style>
+
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
@@ -54,7 +89,7 @@
     			%>
     		</tbody>
     		</table>
-    		<button type="submit">Go to Payment</button>
+    		<button type="submit" class="button">Go to Payment</button>
     	</form>
     </main>
     
