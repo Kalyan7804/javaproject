@@ -1,0 +1,19 @@
+package com.sportyshoes.repository;
+
+import java.util.List;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Query;
+import org.springframework.stereotype.Repository;
+
+import com.sportyshoes.models.Admin;
+
+@Repository
+public interface adminrepo extends JpaRepository<Admin, Long> {
+	public List<Admin> findByUsername(String username);
+	
+	@Query("select a from Admin a where a.username=?1 and a.password=?2")
+	public List<Admin> findByUsernameAndPassword(String username,String password);
+	
+
+}

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans-4.3.xsd">
+	<!-- 
+	<bean name="e" class="com.ph3.beans.Emp">
+	
+	 for Setter injection
+		<property name="eno" value="1"/>
+		<property name="name" value="Kalyan"/>
+		<property name="address" value="Anantapur"/>
+		for constructor injection
+	 <constructor-arg name="eno" value="1" index="0"/>
+	 <constructor-arg name="name" value="suresh" index="1"/>
+	 <constructor-arg name="address" value="Chennai" index="2"/>
+	</bean>
+	 -->
+	 
+	 <bean name="address" class="com.ph3.beans.Address">
+	 	<property name="dno" value="123"></property>
+	 	<property name="streetName" value="Teachers colony"></property>
+	 	<property name="loc" value="Anantapur"></property>
+	 </bean>
+	 
+	 <bean name="e" class="com.ph3.beans.Emp">
+	 	<property name="eno" value="1"></property>
+	 	<property name="name" value="Kalyan"></property>
+	 	<property name="address" ref="address"></property>
+	 
+	 </bean>
+</beans>
